@@ -1,0 +1,68 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 24px;
+}
+
+.topic {
+  width: 800px;
+  padding: 10px;
+  background-color: rgb(40, 40, 50);
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.subtopics {
+  background-color: rgb(190, 190, 200);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.topicItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 790px;
+}
+
+.topicHeader {
+  background-color: rgba(40, 40, 50, 0.4);
+  padding: 5px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+}
+
+.topicTitle {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.topicText {
+  text-align: left;
+}
