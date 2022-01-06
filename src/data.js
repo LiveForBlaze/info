@@ -1,8 +1,10 @@
 export const DATA = [
   {
+    id: 'a0',
     title: "Clean code (Robert Martin)",
     data: [
       {
+        id: 'a0b0',
         header: "General",
         text: "<ul>\
           <li>Follow standard conventions</li>\
@@ -12,6 +14,7 @@ export const DATA = [
         </ul>",
       },
       {
+        id: 'a0b1',
         header: "Naming",
         text: "<ul>\
           <li>Choose descriptive and unambiguous names.</li>\
@@ -23,6 +26,7 @@ export const DATA = [
         </ul>",
       },
       {
+        id: 'a0b2',
         header: "Functions",
         text: "<ul>\
           <li>Small.</li>\
@@ -34,10 +38,7 @@ export const DATA = [
         </ul>",
       },
       {
-        header: "Formatting and rules",
-        text: "<ul><li>functions should be short and compact</li></ul>",
-      },
-      {
+        id: 'a0b3',
         header: "Objects and data structures",
         text: "<ul>\
           <li>Hide internal structure.</li>\
@@ -52,6 +53,7 @@ export const DATA = [
         </ul>",
       },
       {
+        id: 'a0b4',
         header: "Comments",
         text: "<ul>\
           <li>Always try to explain yourself in code.</li>\
@@ -65,10 +67,19 @@ export const DATA = [
         </ul>",
       },
       {
-        header: "Errors",
-        text: "<ul><li>functions should be short and compact</li></ul>",
+        id: 'a0b5',
+        header: "Understandability",
+        text: "<ul>\
+          <li>Be consistent. If you do something a certain way, do all similar things in the same way.</li>\
+          <li>Use explanatory variables.</li>\
+          <li>Encapsulate boundary conditions. Boundary conditions are hard to keep track of. Put the processing for them in one place.</li>\
+          <li>Prefer dedicated value objects to primitive type.</li>\
+          <li>Avoid logical dependency. Don't write methods which works correctly depending on something else in the same class.</li>\
+          <li>Avoid negative conditionals.</li>\
+        </ul>",
       },
       {
+        id: 'a0b6',
         header: "Code smells",
         text: "<ul>\
           <li>Rigidity. The software is difficult to change. A small change causes a cascade of subsequent changes.</li>\
@@ -82,6 +93,7 @@ export const DATA = [
     ],
   },
   {
+    id: "a1",
     title: "Design Patterns",
     data: [
       {
@@ -90,6 +102,7 @@ export const DATA = [
         text: "You are familiar with constructors as functions that initialize objects with specific properties and methods. The constructor pattern is similar to that definition. We use this pattern to <b>create multiple instances of the same object</b>.",
       },
       {
+
         header: "Creational",
         title: "Factory",
         text: "It provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.",
@@ -157,40 +170,79 @@ export const DATA = [
     ],
   },
   {
+    id: "a2",
     title: "SOLID",
     data: [
       {
         header: "Single Responsibility",
-        text: "A class should have one and only one reason to change, meaning that a class should have only one job.",
+        text: "A class should have one and only one reason to change, meaning that a class should have only one job. If a Class has many responsibilities, it increases the possibility of bugs because making changes to one of its responsibilities, could affect the other ones without you knowing.",
+        img: "solid1",
+        height: 400,
       },
       {
         header: "Open-Closed",
-        text: "Objects or entities should be open for extension but closed for modification.",
+        text: "Objects or entities should be open for extension but closed for modification. Changing the current behaviour of a Class will affect all the systems using that Class. If you want the Class to perform more functions, the ideal approach is to add to the functions that already exist NOT change them.",
+        img: "solid2",
+        height: 300,
       },
       {
         header: "Liskov Substitution",
-        text: "Every subclass or derived class should be substitutable for their base or parent class.",
+        text: "Every subclass or derived class should be substitutable for their base or parent class. The <b>child Class</b> should be able to process the <b>same requests and deliver the same result as the parent</b> Class or it could deliver a result that is of the same type.",
+        img: "solid3",
+        height: 500,
       },
       {
         header: "Interface Segregation",
-        text: "A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use.",
+        text: "A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use. A class should perform only those operations that are necessary for the implementation of its functions. All other actions should either be deleted completely or moved if there is a chance that they will be needed by another class in the future.",
+        img: "solid4",
+        height: 400,
       },
       {
         header: "Dependency Inversion",
-        text: "Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.",
+        text: "Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions. According to this principle, the class should not be connected to the tool that it uses to perform the operation. Instead, it should be connected to an interface that helps establish a connection between the tool and the class.",
+        img: "solid5",
+        height: 300,
       },
     ],
   },
   {
+    id: "a3",
     title: "KISS, YAGNI",
   },
   {
+    id: "a4",
     title: "OWASP Top-10",
   },
   {
+    id: "a5",
     title: "Testing",
   },
   {
+    id: "a6",
+    title: "Git Basics",
+  },
+  {
+    id: "a7",
     title: "Git branching strategies",
+    data: [
+      {
+        header: "Git flow",
+        text: "GitFlow is ideally suited for projects that have a scheduled release cycle. The workflow consistes of two main branches that last forever. These are <b>master</b> and <b>develop</b>. Well structurized but slow.",
+        img: "gitFlow",
+        height: 300
+      },
+      {
+        header: "GitHub flow",
+        text: "This flow is ideal for organizations that need <b>simplicity, and roll out frequently</b>. Every unit of work, whether it be a bugfix or feature, is done through a branch that is <b>created from master</b>. After the work has been completed in the branch, it is reviewed and tested before being merged into master and pushed out to production. Simplier and quicker. Oriented on more mature developers.",
+        img: "gitHubFlow",
+        height: 300
+      },
+      {
+        header: "GitLab flow",
+        text: "Workflow for organizations that need to release frequently, rather than having scheduled releases. Added production(pre-prod) brunches.",
+        img: "gitLabFlow",
+        height: 300
+      },
+    ],
   },
 ];

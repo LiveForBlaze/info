@@ -1,7 +1,7 @@
 import "../App.css";
 import { TopicItem } from "./TopicItem";
 
-export const Topic = ({ title, filter, data, onClick, isOpened }) => {
+export const Topic = ({ title, id, filter, data, onClick, isOpened }) => {
   const filteredData = data?.filter(
     (item) =>
       item.title?.toLowerCase().includes(filter) ||
