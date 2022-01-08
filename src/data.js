@@ -212,10 +212,95 @@ export const DATA = [
   {
     id: "a4",
     title: "OWASP Top-10",
+    data: [
+      {
+        header: "#1",
+        title: "Broken Access Control",
+        text: "Acceess control is an access restrictions for users to certain parts of the page (f.e to admin page, FTP/SSH, hosting admin panel). Depending on the specific vulnerability, the consequences can be devastating. The worst case scenario is when an unauthorized user has access to a privileged function. This can give them the ability to modify or delete contents on the website, or even worse, gain full control over the web application.<br /><b>Problems:</b><ul>\
+          <li>Violation of the principle of least privilege or <b>deny by default</b>.</li>\
+          <li>Accessing API with missing access controls for POST, PUT and DELETE.</li>\
+          <li>CORS misconfiguration allows API access from unauthorized/untrusted origins.</li>\
+          <li>Acting as a user without being logged in or acting as an admin when logged in as a user.</li>\
+          <li>Permitting viewing or editing someone else's account, by providing its unique identifier.</li>\
+        </ul>",
+      },
+      {
+        header: "#2",
+        title: "Cryptographic Failures (aka Sensitive Data Exposure)",
+        text: "Sensitive data can be exposed by applications or APIs that do not have adequate built-in protections. For strong security, it is important to provide protective measures for data in transit or at rest. Sensitive data is a valuable commodity for threat actors, making data security particularly important. Stolen data may be monetized through committing fraud, blackmail, identity-related crimes, or sold on the dark web.<br /><b>PREVENT:</b><ul>\
+        <li>Identify which data is sensitive according to privacy laws, regulatory requirements, or business needs.</li>\
+        <li>Don’t store sensitive data unnecessarily.</li>\
+        <li>Make sure to encrypt all sensitive data at rest.</li>\
+        <li>Ensure up-to-date and strong standard algorithms, protocols, and keys are in place; use proper key management.</li>\
+        <li>Disable caching for responses that contain sensitive data.</li>\
+        <li>Store passwords using strong adaptive and salted hashing functions with a work factor (delay factor), such as Argon2, scrypt, bcrypt, or PBKDF2.</li>\
+        <li>Encrypt all data in transit with secure protocols such as TLS (HTTPS).</li>\
+      </ul>",
+      },
+      {
+        header: "#3",
+        title: "Injection (+XSS)",
+        text: "A code injection happens when an attacker sends invalid data to the web application with the intention to make it do something that the application was not designed/programmed to do.<br /><b>PREVENT:</b><ul>\
+        <li>The preferred option is to use a safe API, which avoids using the interpreter entirely, provides a parameterized interface, or migrates to Object Relational Mapping Tools (ORMs).</li>\
+        <li>Use positive server-side input validation. This is not a complete defense as many applications require special characters, such as text areas or APIs for mobile applications.</li>\
+        <li>For any residual dynamic queries, escape special characters using the specific escape syntax for that interpreter.</li>\
+        <li>Use LIMIT and other SQL controls within queries to prevent mass disclosure of records in case of SQL injection.</li>\
+      </ul>",
+      },
+      {
+        header: "#4",
+        title: "Insecure Design",
+        text: "",
+      },
+      {
+        header: "#5",
+        title: "Security Missconfiguration",
+        text: "",
+      },
+      {
+        header: "#6",
+        title: "Vulnerable and outdated components",
+        text: "",
+      },
+      {
+        header: "#7",
+        title: "Identification and Authentication Failures",
+        text: "",
+      },
+      {
+        header: "#8",
+        title: "Software and Data Integrity Failures",
+        text: "",
+      },
+      {
+        header: "#9",
+        title: "Security Logging and Monitoring Failures",
+        text: "",
+      },
+      {
+        header: "#10",
+        title: "Server Side Request Forgery",
+        text: "",
+      },
+    ]
   },
   {
     id: "a5",
     title: "Testing",
+    data: [
+      {
+        header: "F.I.R.S.T Testing Principles",
+        text: "<b>Fast</b> Test should run fast, noone will wait too long.<br/>\
+        <b>Independant</b> One run should not depend on other runs results.<br/>\
+        <b>Repeatable</b> Test can be repeated on any device (screen resolution, ...).<br/>\
+        <b>Self-validating</b> Must return true or false without any other interpretation.<br/>\
+        <b>Timely</b> They should be written before or with the code."
+      },
+      {
+        header: "Testing Pyramid",
+        text: ""
+      },
+    ]
   },
   {
     id: "a6",

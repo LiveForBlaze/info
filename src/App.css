@@ -8,6 +8,10 @@ body,
   background-color: rgb(240, 240, 240);
 }
 
+ul {
+  margin-top: 0;
+}
+
 .app {
   margin-top: 80px;
   height: 100%;
@@ -115,7 +119,7 @@ body,
 .topicHeader {
   background-color: rgba(40, 40, 50, 0.4);
   padding: 5px;
-  color: whitesmoke;
+  color: white;
   text-transform: uppercase;
   font-size: 26px;
   font-weight: 600;

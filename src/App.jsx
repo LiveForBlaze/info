@@ -11,6 +11,7 @@ function App() {
   const [visibleItems, setVisibleItems] = useState({});
   const [activeItem, setActiveItem] = useState(null);
   const [data, setData] = useState(DATA);
+  const [availableData, setAvailableData] = useState(DATA);
   const [filter, setFilter] = useState("");
 
   const executeScroll = () => window.scrollTo(0, 0);
@@ -52,20 +53,25 @@ function App() {
   // Filter DATA
   useEffect(() => {
     if (filter) {
-      const newData = handleFilter([...DATA], filter);
+      const newData = handleFilter([...availableData], filter);
       setData(newData);
       executeScroll();
     } else {
-      setData(DATA);
+      setData(availableData);
       setActiveItem(null);
       executeScroll();
     }
   }, [filter]);
 
   useEffect(() => {
-    setData([...DATA].filter((item) => visibleItems[item.id]));
+    setAvailableData([...DATA].filter((item) => visibleItems[item.id]));
     executeScroll();
   }, [visibleItems]);
+
+  useEffect(() => {
+    setData(availableData);
+    executeScroll();
+  }, [availableData]);
 
   // Set item active if it's only one
   useEffect(() => {
