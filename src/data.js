@@ -106,36 +106,65 @@ export const DATA = [
         header: "Creational",
         title: "Factory",
         text: "It provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.",
+        img: "dp10",
+        height: 300,
+      },
+      {
+
+        header: "Creational",
+        title: "Builder",
+        text: " It allows to create complex object step by step. Builder uses the same code to create different object representations.",
+        img: "dp11",
+        height: 300,
       },
       {
         header: "Creational",
         title: "Prototype",
         text: "It lets you copy existing objects without making your code dependent on their classes. <b>It creates new instances of objects by cloning them from a prototype</b>. The main focus of prototype pattern is to create an object used as a blueprint for each object constructor created.",
+        img: "dp8",
+        height: 300,
       },
       {
         header: "Creational",
         title: "Singleton",
         text: "It lets you ensure that a <b>class has only one instance</b>, while providing a global access point to this instance.",
+        img: "dp9",
+        height: 300,
       },
       {
         header: "Structural",
         title: "Adapter",
         text: "It allows objects with incompatible interfaces to collaborate. This is a special <b>object that converts the interface of one object so that another object can understand it</b>.",
+        img: "dp3",
+        height: 300,
       },
       {
         header: "Structural",
         title: "Decorator",
-        text: "It lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.",
+        text: "It lets you <b>attach new behaviors to objects</b> by placing these objects inside special wrapper objects that contain the behaviors.<br/><br/>Example: Any clothes are decorators. They don't change the Object but add some weather protection functions.",
+        img: "dp4",
+        height: 300,
       },
       {
         header: "Structural",
         title: "Facade",
-        text: "It provides a simplified interface to a library, a framework, or any other complex set of classes. A facade might provide limited functionality in comparison to working with the subsystem directly. However, it includes only those features that clients really care about.",
+        text: "It <b>provides a simplified interface</b> to a library, a framework, or any other complex set of classes. A facade might provide limited functionality in comparison to working with the subsystem directly. However, it includes only those features that clients really care about.",
+        img: "dp5",
+        height: 300,
       },
       {
         header: "Structural",
         title: "Flyweight",
-        text: "It lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.",
+        text: "It lets you <b>fit more objects into the available amount of RAM</b> by sharing common parts of state between multiple objects instead of keeping all of the data in each object.",
+        img: "dp6",
+        height: 300,
+      },
+      {
+        header: "Structural",
+        title: "Bridge",
+        text: "It lets you to devide one or several classes into two separate hierarchy - abstraction and realisation. That allows to change them separately.",
+        img: "dp7",
+        height: 300,
       },
       {
         header: "Structural",
@@ -146,18 +175,42 @@ export const DATA = [
         header: "Behaviour",
         title: "Chain of responsibility",
         text: "It lets you pass requests along a chain of handlers. Upon receiving a request, each <b>handler decides either to process the request or to pass it to the next handler</b> in the chain.",
+        img: "dp12",
+        height: 300,
       },
       {
         header: "Behaviour",
         title: "State",
-        text: "It lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.",
+        data: [
+          {
+            text: "It lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.",
+            img: "dp12",
+            height: 300,
+          },
+          {
+            text: "Your mobile phone will act differently:<ul>\
+            <li>when it's unlocked, pressing keys will lead to some actions.</li>\
+            <li>when it's lockedК, pressing keys will lead to unlock screen.</li>\
+            <li>when it's out of power, pressing keys will show low power icon.</li>"
+          }
+        ]
       },
       {
         header: "Behaviour",
         title: "Observer",
-        text: "It lets you define a subscription mechanism to <b>notify multiple objects about any events that happen to the object they’re observing</b>.",
-        img: "dp2",
-        height: 300,
+        data: [
+          {
+            text: "It lets you define a subscription mechanism to <b>notify multiple objects about any events that happen to the object they’re observing</b>.",
+            img: "dp2",
+            height: 300,
+          },
+          {
+            text: "After you subscribed to a newspaper you don't need to go to the shop and check if there is a new one.",
+            img: "dp14",
+            height: 300,
+          },
+
+        ],
       },
       {
         header: "Behaviour",
@@ -170,6 +223,15 @@ export const DATA = [
         header: "Behaviour",
         title: "Command",
         text: "It turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.",
+        img: "dp15",
+        height: 300,
+      },
+      {
+        header: "Behaviour",
+        title: "Itterator",
+        text: "It is used to get a way to access the elements of a collection object in sequential manner without any need to know its underlying representation.",
+        img: "dp16",
+        height: 300,
       },
     ],
   },
@@ -375,23 +437,69 @@ export const DATA = [
       },
       {
         title: "Set",
-        text: "",
+        text: "A set is a basic concept in mathematics: a collection of well defined and distinct objects. ES6 introduced the concept of set, which has certain level of similarity with array. However, a set does not allow repeating elements and is not indexed. You cannot add element that is already exist in the set.<br/><br/><ul>\
+          <li>values: Return all elements in a set.</li>\
+          <li>size: Return the number of elements.</li>\
+          <li>has: Determine whether an element exists.</li>\
+          <li>add: Insert elements into set.</li>\
+          <li>delete: Delete elements from set.</li>\
+        </ul>",
+        img: "ds4",
+        height: 200
       },
       {
         title: "Hash table",
-        text: "",
+        text: "A hash table is a key-value data structure. Due to the lightning speed of querying a value through key, it is commonly used in <b>Map</b>, Dictionary or <b>Object</b> data structures. As shown in the graph above, the hash table uses a hash function to convert keys into a list of numbers, and these numbers serve as the values of corresponding keys. To get value using key is dashingly fast, time complexity can achieve O(1). The same keys must return the same values — this is the basis of the hash function.",
+        img: "ds5",
+        height: 200
       },
       {
         title: "Tree",
-        text: "",
+        text: "Tree data structure is a multi-layer structure. It is also a non-linear data structure, compared to Array, Stack, and Queue. This structure is highly efficient during insert and search operations. Let’s take a look at some concepts of tree data structure:<br/><br/><ul>\
+          <li>root: Root node of a tree, no parent node for root.</li>\
+          <li>parent node: Direct node of the upper layer, only has one.</li>\
+          <li>child node: Direct node(s) of the lower layer, can have multiple.</li>\
+          <li>siblings: Share the same parent node.</li>\
+          <li>leaf: Node with no child.</li>\
+          <li>Edge: Branch or link between nodes.</li>\
+          <li>Path: The edges from a starting node to the target node.</li>\
+          <li>Height of Node: Number of edges of the longest path of a specific node to leaf node.</li>\
+          <li>Height of Tree: Number of edges of the longest path of the root node to the leaf node.</li>\
+          <li>Depth of Node: Number of edges from root node to specific node.</li>\
+          <li>Degree of Node: Number of child nodes.</li>\
+        </ul>",
+        img: "ds6",
+        height: 300
       },
       {
         title: "Trie (pronounced try)",
-        text: "",
+        text: "Trie, or “Prefix Tree”, is also a type of search tree. Trie stores the data step-by-step — each node in the tree represents a step. Trie is used in storing vocabularyso it can be quickly searched, especially for an auto-complete function. Each node in Trie has an alphabet — following the branch can form a complete word. It also comprises a boolean indicator to show whether is this the last alphabet.",
+        img: "ds7",
+        height: 300
       },
       {
         title: "Graph",
-        text: "",
+        data: [
+          {
+            text: "Graph, sometimes known as network, refers to sets of nodes with linkages (or edges). It could be further divided into two groups (ie. directed graphs and undirected graphs), according to whether the linkages have direction. Graph is widely used in our lives — to calculate the best route in navigation apps, or to recommended friends in social media, to take two examples.<br/>",
+            img: "ds8",
+            height: 300
+          },
+          {
+            text: "<br/>Graph has two types of presentation:<br/><br/>\
+              <b>Adjacency List</b><br/>In this method, we list all the possible nodes on the left and show the connected nodes on the right.",
+            img: "ds8a",
+            height: 200
+          },
+          {
+            text: "<b>Adjacency Matrix</b><br/>Adjacency matrix shows nodes in row and column, intersections of the row and column interpret the relationship between nodes, 0 means not linked, 1 means linked, >1 means different weightage.",
+            img: "ds8b",
+            height: 200
+          },
+          {
+            text: "To query for nodes in graph, one must search through the entire tree network with either the Breath-First-Search (BFS) method or the Depth-First-Search (DFS) method.",
+          }
+        ],
       }
     ]
   },

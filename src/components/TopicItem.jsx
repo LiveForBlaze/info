@@ -12,6 +12,17 @@ export const TopicItemComponent = ({ data, previuosHeader }) => {
         className="topicText"
         dangerouslySetInnerHTML={{ __html: data.text }}
       />
+      {
+        data.data && data.data.map((item) => (
+          <>
+            <div
+              className="topicText"
+              dangerouslySetInnerHTML={{ __html: item.text }}
+            />
+           {item.img && <div className="image" style={{ backgroundImage: `url(${IMAGES[item.img]})`, height: item.height || 0}} />}
+          </>
+        ))
+      }
       <div
         className="topicText"
         dangerouslySetInnerHTML={{ __html: data.addText ?? '' }}
