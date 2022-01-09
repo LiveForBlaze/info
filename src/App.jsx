@@ -35,7 +35,7 @@ function App() {
   }
 
   useEffect(() => {
-    setVisibleItems(JSON.parse(localStorage.getItem('options')));
+    setVisibleItems(JSON.parse(localStorage.getItem('options')) ?? {});
   }, []);
 
   const handleFilter = (input, filter) => {
@@ -64,7 +64,7 @@ function App() {
   }, [filter]);
 
   useEffect(() => {
-    setAvailableData([...DATA].filter((item) => visibleItems[item.id]));
+    setAvailableData([...DATA].filter((item) => item?.id && visibleItems[item.id]));
     executeScroll();
   }, [visibleItems]);
 

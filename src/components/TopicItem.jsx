@@ -12,6 +12,10 @@ export const TopicItemComponent = ({ data, previuosHeader }) => {
         className="topicText"
         dangerouslySetInnerHTML={{ __html: data.text }}
       />
+      <div
+        className="topicText"
+        dangerouslySetInnerHTML={{ __html: data.addText ?? '' }}
+      />
       {data.img && <div className="image" style={{ backgroundImage: `url(${IMAGES[data.img]})`, height: data.height || 0}} />}
     </div>
   );

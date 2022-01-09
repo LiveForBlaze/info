@@ -156,11 +156,15 @@ export const DATA = [
         header: "Behaviour",
         title: "Observer",
         text: "It lets you define a subscription mechanism to <b>notify multiple objects about any events that happen to the object they’re observing</b>.",
+        img: "dp2",
+        height: 300,
       },
       {
         header: "Behaviour",
         title: "Mediator",
-        text: "It lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.",
+        text: "Restricts direct communications between the objects and <b>forces them to collaborate only via a mediator object</b>. It lets you reduce chaotic dependencies between objects. ",
+        img: "dp1",
+        height: 300,
       },
       {
         header: "Behaviour",
@@ -175,31 +179,31 @@ export const DATA = [
     data: [
       {
         header: "Single Responsibility",
-        text: "A class should have one and only one reason to change, meaning that a class should have only one job. If a Class has many responsibilities, it increases the possibility of bugs because making changes to one of its responsibilities, could affect the other ones without you knowing.",
+        text: "<em>A class should have only one reason to change</em><br/><br/>This means that a <b>class should have only one job</b>. <br/><br/>If a Class has many responsibilities, it increases the possibility of bugs because making changes to one of its responsibilities, could affect the other ones without you knowing.",
         img: "solid1",
         height: 400,
       },
       {
         header: "Open-Closed",
-        text: "Objects or entities should be open for extension but closed for modification. Changing the current behaviour of a Class will affect all the systems using that Class. If you want the Class to perform more functions, the ideal approach is to add to the functions that already exist NOT change them.",
+        text: "<em>Objects or entities should be open for extension but closed for modification.</em><br/><br/>Changing the current behaviour of a Class will affect all the systems using that Class. If you want the Class to perform more functions, the ideal approach is to <b>add to the functions that already exist NOT change them</b>.",
         img: "solid2",
         height: 300,
       },
       {
         header: "Liskov Substitution",
-        text: "Every subclass or derived class should be substitutable for their base or parent class. The <b>child Class</b> should be able to process the <b>same requests and deliver the same result as the parent</b> Class or it could deliver a result that is of the same type.",
+        text: "<em>Every subclass or derived class should be substitutable for their base or parent class.</em><br/><br/> The <b>child Class</b> should be able to process the <b>same requests and deliver the same result as the parent</b> Class or it could deliver a result that is of the same type.",
         img: "solid3",
         height: 500,
       },
       {
         header: "Interface Segregation",
-        text: "A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use. A class should perform only those operations that are necessary for the implementation of its functions. All other actions should either be deleted completely or moved if there is a chance that they will be needed by another class in the future.",
+        text: "<em>A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use.</em><br/><br/>Many client-specific interfaces are better than one general-purpose interface.<br/><br/> <b>A class should perform only those operations that are necessary for the implementation of its functions</b>. All other actions should either be deleted completely or moved if there is a chance that they will be needed by another class in the future.",
         img: "solid4",
         height: 400,
       },
       {
         header: "Dependency Inversion",
-        text: "Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions. According to this principle, the class should not be connected to the tool that it uses to perform the operation. Instead, it should be connected to an interface that helps establish a connection between the tool and the class.",
+        text: "<em>Entities must depend on abstractions, not on concretions.</em><br/><br/> It states that the <b>high-level module must not depend on the low-level module</b>, but they should depend on abstractions.<br/><br/> According to this principle, the class should not be connected to the tool that it uses to perform the operation. Instead, it should be connected to an interface that helps establish a connection between the tool and the class.",
         img: "solid5",
         height: 300,
       },
@@ -329,5 +333,66 @@ export const DATA = [
         height: 300
       },
     ],
+  },
+  {
+    id: "a8",
+    title: "Data structures",
+    data: [
+      {
+        title: "Stack",
+        text: "Stack follows the principle of LIFO (<b>Last In First Out</b>). If you stack books, the top book will be taken before the bottom one. Or when you browse on internet, the back button leads you to the most recently browsed page.<br/><br/><ul>\
+          <li>push: input a new element</li>\
+          <li>pop: remove the top element, return the removed element</li>\
+          <li>peek: return the top element</li>\
+          <li>length: return the number of element(s) in Stack</li>\
+        </ul><b>Array</b> in Javascript has the attributes of Stack\
+        ",
+        img: "ds1",
+        height: 200
+      },
+      {
+        title: "Queue",
+        text: "Queue is similar to Stack. The only difference is that Queue uses the FIFO principle (<b>First In First Out</b>). In other words, when you queue for bus, the first in the queue will always board first.<br/><br/><ul>\
+          <li>enqueue: enter queue, add an element at the end</li>\
+          <li>dequeue: leave queue, remove the front element and return it</li>\
+          <li>front: get the first element</li>\
+          <li>isEmpty: determine whether the queue is empty</li>\
+          <li>size: get the number of element(s) in queue</li>\
+        </ul><b>Array</b> in Javascript has some attributes of Queue\
+        ",
+        img: "ds2",
+        height: 200
+      },
+      {
+        title: "Linked List",
+        text: "Literally, a linked list is a chained data structure, with each node consisting of two pieces of information: the data of the node and the pointer to the next node. Linked list and conventional array are both linear data structures with serialised storage. Of course, they also have differences:<br/><br/><ul>\
+          <li>Array read from index, faster speeed.</li>\
+          <li>Array add/deletes slower</li>\
+        </ul>\
+        ",
+        img: "ds3",
+        height: 200
+      },
+      {
+        title: "Set",
+        text: "",
+      },
+      {
+        title: "Hash table",
+        text: "",
+      },
+      {
+        title: "Tree",
+        text: "",
+      },
+      {
+        title: "Trie (pronounced try)",
+        text: "",
+      },
+      {
+        title: "Graph",
+        text: "",
+      }
+    ]
   },
 ];
