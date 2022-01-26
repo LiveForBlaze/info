@@ -1,3 +1,8 @@
+import a1 from './assets/a1.jpg';
+
+import al1 from './assets/al1.jpg';
+import al2 from './assets/al2.jpg';
+
 import image1 from './assets/gitflow.png';
 import image2 from './assets/githubflow.png';
 import image3 from './assets/gitlabflow.png';
@@ -25,6 +30,23 @@ import dp14 from './assets/dp14.png';
 import dp15 from './assets/dp15.png';
 import dp16 from './assets/dp16.png';
 
+import dm1 from './assets/dm1.jpg';
+import dm2 from './assets/dm2.jpg';
+import dm3 from './assets/dm3.png';
+import dm4 from './assets/dm4.png';
+
+import n1 from './assets/n1.png';
+import n2 from './assets/n2.png';
+import n3 from './assets/n3.jpeg';
+import n4 from './assets/n4.png';
+import n5 from './assets/n5.gif';
+import n6 from './assets/n6.png';
+import n7 from './assets/n7.png';
+
+import o1 from './assets/o1.png';
+
+import t1 from './assets/t1.jpeg';
+
 import ds1 from './assets/ds1.png';
 import ds2 from './assets/ds2.png';
 import ds3 from './assets/ds3.png';
@@ -37,38 +59,14 @@ import ds8a from './assets/ds8a.png';
 import ds8b from './assets/ds8b.png';
 
 export const IMAGES = {
-  gitFlow: image1,
-  gitHubFlow: image2,
-  gitLabFlow: image3,
-  solid1,
-  solid2,
-  solid3,
-  solid4,
-  solid5,
-  dp1,
-  dp2,
-  dp3,
-  dp4,
-  dp5,
-  dp6,
-  dp7,
-  dp8,
-  dp9,
-  dp10,
-  dp11,
-  dp12,
-  dp13,
-  dp14,
-  dp15,
-  dp16,
-  ds1,
-  ds2,
-  ds3,
-  ds4,
-  ds5,
-  ds6,
-  ds7,
-  ds8,
-  ds8a,
-  ds8b,
+  a1,
+  al1, al2,
+  gitFlow: image1, gitHubFlow: image2, gitLabFlow: image3,
+  solid1, solid2, solid3, solid4, solid5,
+  dp1, dp2, dp3, dp4, dp5, dp6, dp7, dp8, dp9, dp10, dp11, dp12, dp13, dp14, dp15, dp16,
+  ds1, ds2, ds3, ds4, ds5, ds6, ds7, ds8, ds8a, ds8b,
+  dm1, dm2, dm3, dm4,
+  n1, n2, n3, n4, n5, n6, n7,
+  o1,
+  t1,
 };

@@ -39,21 +39,21 @@ function App() {
   }, []);
 
   const handleFilter = (input, filter) => {
-    return [...input].filter((item) => (
-        item.data &&
-        item.data.filter((item) => {
-          return (
-            item.title?.toLowerCase().includes(filter) ||
-            item.header?.toLowerCase().includes(filter)
-          );
-        }).length > 0
+    return input.filter((item) => (
+      item.data &&
+      item.data.filter((item) => {
+        return (
+          item.title?.toLowerCase().includes(filter) ||
+          item.header?.toLowerCase().includes(filter)
+        );
+      }).length > 0
     ));
   }
 
   // Filter DATA
   useEffect(() => {
     if (filter) {
-      const newData = handleFilter([...availableData], filter);
+      const newData = handleFilter(availableData, filter);
       setData(newData);
       executeScroll();
     } else {
@@ -64,7 +64,7 @@ function App() {
   }, [filter]);
 
   useEffect(() => {
-    setAvailableData([...DATA].filter((item) => item?.id && visibleItems[item.id]));
+    setAvailableData(DATA.filter((item) => item?.id && visibleItems[item.id]));
     executeScroll();
   }, [visibleItems]);
 

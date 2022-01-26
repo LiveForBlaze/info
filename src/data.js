@@ -327,6 +327,8 @@ export const DATA = [
         header: "#6",
         title: "Vulnerable and outdated components",
         text: "",
+        img: "o1",
+        height: 400,
       },
       {
         header: "#7",
@@ -341,7 +343,14 @@ export const DATA = [
       {
         header: "#9",
         title: "Security Logging and Monitoring Failures",
-        text: "",
+        text: "There is no direct vulnerability that can arise due to these issues but in general, logging and monitoring are quite critical and their absence or failures can directly impact visibility, incident alerting, and forensics. Thus, it’s quite important to have a functional logging and monitoring system to collect logs and also give alerts if any malfunctions or errors happen, else these can go unnoticed for a long time and cause a lot more damage. \
+        <ul> \
+          <li>Ensure that you log all login and failed attempts</li> \
+          <li>Maintain a copy of the logs in case the server suffers issues</li> \
+          <li>Ensure that the logs contains all the relevant data and are well-formatted to be consumed by other tools or log management solutions</li> \
+          <li>Test if your monitoring systems that can suspicious activity and ensure the alerting is done in near real time</li> \
+          <li>Ensure that your logs are tamper-proof</li> \
+          </ul>",
       },
       {
         header: "#10",
@@ -364,7 +373,9 @@ export const DATA = [
       },
       {
         header: "Testing Pyramid",
-        text: ""
+        text: "Testing Pyramid is a framework that can help both developers and QAs create high-quality software. It reduces the time required for developers to identify if a change they introduced breaks the code. It can also be helpful in building a more reliable test suite.",
+        img: "t1",
+        height: 500
       },
     ]
   },
@@ -501,6 +512,220 @@ export const DATA = [
           }
         ],
       }
+    ]
+  },
+  {
+    id: "a9",
+    title: "Functional Programming / FRP",
+    data: [
+      {
+        header: "Functional Composition",
+        text: "Function composition is an approach where the result of one function is passed on to the next function, which is passed to another until the final function is executed for the final result. Function compositions can be composed of any number of functions."
+      },
+      {
+        header: "High ordered functions",
+        text: "Functions which returns/recieves as an argument other function."
+      },
+    ]
+  },
+  {
+    id: "a10",
+    title: "Development methodology: Agile, Scrum, Kanban",
+    data: [
+      {
+        header: "Agile",
+        text: "Instead of betting everything on a \"big bang\" launch, an agile team delivers work in small, but consumable, increments.\
+        12 principles: <ul>\
+          <li>Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.</li> \
+          <li>Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.</li> \
+          <li>Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.</li> \
+          <li>Business people and developers must work together daily throughout the project.</li> \
+          <li>Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.</li> \
+          <li>The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.</li> \
+          <li>Working software is the primary measure of progress.</li> \
+          <li>Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.</li> \
+          <li>Continuous attention to technical excellence and good design enhances agility.</li> \
+          <li>The best architectures, requirements, and designs emerge from self-organizing teams.</li> \
+          <li>Simplicity--the art of maximizing the amount of work not done--is essential.</li> \
+          <li>At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.</li> \
+        </ul>\
+        ",
+        img: "dm2",
+        height: 500
+      },
+      {
+        header: "Scrum",
+        text: "",
+        img: "dm1",
+        height: 400
+      },
+      {
+        header: "Kanban",
+        text: "",
+        img: "dm3",
+        height: 400
+      },
+      {
+        header: "Extreme Programming",
+        text: "",
+        img: "dm4",
+        height: 500
+      },
+    ]
+  },
+  {
+    id: "a11",
+    title: "Performance",
+    data: [
+      {
+        header: "Network optimisations",
+        text: "Network optimization is an umbrella term that refers to a range of tools, strategies, and best practices for monitoring, managing, and improving network performance. The primary goal of network optimization is to ensure the best possible network design and performance at the lowest cost structure. \
+        <h4>Top network optimization metrics are:</h4> \
+        <ul> \
+            <li><b>Latency and round-trip time</b> - “Latency” is a synonym for “delay”. Network latency is the measurement of delays that occur in data communication, either in a one-way or round trip of a packet of data. </li> \
+            <li><b>Packet Loss</b> - A network packet is a small segment of data that may be transmitted from one point to another within a network. Complete messages, files, or other types of information are broken down into packets which are then individually sent and recombined to reconstruct the original file at the destination. In the event that a packet fails to arrive intact, the origin will need to resend only the lost packet, instead of resending the entire file.</li> \
+            <li>Availability</li> \
+            <li><b>Network Jitter</b> - This occurs when a stream of data is not constant, resulting in some packets of data taking longer than others to be delivered. Jitter is a sign of an overloaded router due to network congestion, and usually results in poor online video or voice quality.</li> \
+            <li>Utilization</li> \
+          </ul> \
+          <h4>Common network optimization strategies:</h4>\
+          <ul> \
+            <li><b>Data caching</b> for a more flexible means of data storage and retrieval.</li> \
+            <li><b>Traffic shaping</b> to maximize the speed and access to your highest-traffic network infrastructure.</li> \
+            <li><b>Prioritizing SD-WAN over WAN</b>, further improving traffic shaping and supporting the most business-critical pieces of your network. </li> \
+            <li><b>Data compressing</b> to further eliminate redundant data and encourage more efficient data packet transfers. </li> \
+            <li>...</li> \
+          </ul>",
+      },
+    ]
+  },
+  {
+    id: "a12",
+    title: "React / Redux",
+    data: [
+      {
+        header: "Refs",
+        text: "Refs in React provides a way to access the React elements (or DOM nodes) created in the render() method."
+      },
+      {
+        header: "React hooks",
+        text: "<ul>\
+        <li><b>useEffect</b> - adds the ability to perform side effects from a function component. It serves the same purpose as <b>componentDidMount</b>, <b>componentDidUpdate</b>, and <b>componentWillUnmount</b> in React classes, but unified into a single API.</li>\
+        <li><b>useLayoutEffect</b> - Same as <b>useEffect</b> but acts more like ComponentDidMount - <b>blocks render while executing (sync.)</b> </li>\
+        <li><b>useState</b> - Returns a stateful value, and a function to update it. During the initial render, the returned state (state) is the same as the value passed as the first argument (initialState).</li>\
+        <li><b>useCallback</b> </li>\
+        <li><b>useMemo</b> - </li>\
+        <li><b>useRef</b> - </li>\
+        <li><b>useContext</b> - </li>\
+        <li><b>useReducer</b> - </li>\
+        </ul>",
+      },
+    ]
+  },
+  {
+    id: "a13",
+    title: "CORS, Authorization (OAuth, JWT, Basic, ...)",
+    data: [
+      {
+        header: "CORS",
+        text: "<b>Cross-Origin Resource Sharing</b> is an important way for a restricted resource on a specific web page to get requested from a website which sits on a different domain. <br/>Modern CORS-supporting browsers will require an additional “preflight” request when some cross-domain Ajax resources are requested. This is done to determine whether the browser has the permission to take the action it wants to take.  \
+        <h4>Request Headers</h4><ul> \
+          <li>Origin</li> \
+          <li>Access-Control-Request-Method: one of [GET/POST/...]</li>\
+          <li>Access-Control-Request-Headers </li></ul>\
+          <h4>Response headers</h4><ul> \
+          <li>Access-Control-Allow-Origin : * / http://www.mydo...</li> \
+          <li>Access-Control-Allow-Credentials: only [true] or ommit this header</li> \
+          <li>Access-Control-Expose-Headers</li> \
+          <li>Access-Control-Max-Age</li> \
+          <li>Access-Control-Allow-Methods</li> \
+          <li>Access-Control-Allow-Headers</li></ul>"
+      },
+      {
+        header: "OAuth",
+        text: "OAuth is an open-standard authorization protocol or framework that provides applications the ability for “secure designated access.” For example, you can tell Facebook that it’s OK for ESPN.com to access your profile or post updates to your timeline without having to give ESPN your Facebook password.<br/><br/> OAuth doesn’t share password data but instead uses authorization tokens to prove an identity between consumers and service providers. OAuth is an authentication protocol that <b>allows you to approve one application interacting with another</b> on your behalf <b>without giving away your password</b>."
+      },
+      {
+        header: "JWT",
+        text: "JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties.",
+        img: "a1",
+        height: 500
+      }
+    ]
+  },
+  {
+    id: "a14",
+    title: "Web Protocols: HTTP, REST, RPC(JRPC), GraphQL...",
+    data: [
+      {
+        header: "HTTP / HTTPS / HTTP 2.0 / HTTP 3.0 (QUIC - UDP)",
+        text: "Client - server architecture. <br/><ul>Hyper Text Transfer Protocol is a rule of interacting between \
+        \
+        </ul> ",
+        data: [
+          {
+            img: "n7",
+            height: 500,
+          },
+          {
+            img: "n6",
+            height: 500,
+          }
+        ]
+      },
+      {
+        header: "RPC(JRPC)",
+        text: "",
+        img: "n5",
+        height: 500
+      },
+      {
+        header: "GraphQL",
+        text: "Get many resources in a single request. <br/>",
+        img: "n3",
+        height: 500
+      },
+      {
+        header: "Rest",
+        text: "",
+        img: "n1",
+        height: 500
+      },
+      {
+        header: "SOAP",
+        text: "SOAP messages are encoded as XML documents and can be exchanged using various underlying protocols.",
+        img: "n2",
+        height: 500
+      },
+      {
+        header: "Cookies",
+        text: "Cookies are <b>text files with small pieces of data</b> — like a username and password — that are used to identify your computer as you use a computer network. <br/><br/> Data stored in a cookie is <b>created by the server</b> upon your connection. This data is labeled with an ID unique to you and your computer. \
+        <br/><br/>HTTP cookies, or internet cookies, are built specifically for Internet web browsers to track, personalize, and save information about each user’s session. A “session” just refers to the time you spend on a site. \
+        <br/><br/>The server only sends the cookie when it wants the web browser to save it. If you’re wondering “where are cookies stored,” it’s simple: your web browser will store it locally to remember the “name-value pair” that identifies you. \
+        <br/><br/>They can't infect computers with viruses or other malware. However, some cyberattacks can <b>hijack</b> cookies and enable access to your browsing sessions.",
+        img: "n4",
+        height: 300
+      },
+    ]
+  },
+  {
+    id: "a15",
+    title: "Algorithms",
+    data: [
+      {
+        header: "Algorithms complexity",
+        text: "Algorithmic complexity is a measure of <b>how long an algorithm would take to complete given an input of size n</b>. If an algorithm has to scale, it should compute the result within a finite and practical time bound even for large values of n.",
+        data: [
+          {
+            img: "al1",
+            height: 500
+          },
+          {
+            img: "al2",
+            height: 400
+          }
+        ]
+      },
     ]
   },
 ];
